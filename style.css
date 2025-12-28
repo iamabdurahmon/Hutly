@@ -1,0 +1,286 @@
+/* ======== GOOGLE FONT ========= */
+
+@import url("https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* ========= LIGHT MODE ROOT ========= */
+
+:root {
+  --bg-color: #fff;
+  --secondary-color: #f7f8f8;
+  --primary-color: #050f27;
+  --hover-color: #021339;
+  --bg-2: #ffffff05;
+}
+
+/* ========= DARK MODE ROOT ========= */
+
+body.dark-mode {
+  --bg-color: #050f27;
+  --secondary-color: #111b31;
+  --primary-color: #fff;
+  --hover-color: #f7f8f8;
+  --bg-2: #ffffff05;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Sansation", sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  padding: 0 5rem;
+}
+
+/* ========= HEADER SECTION START ========== */
+
+.header-container {
+  position: sticky;
+  top: 0;
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  left: 0;
+}
+
+.header-section {
+  width: 100%;
+  height: auto;
+  padding: 1rem 5rem;
+  background-color: var(--secondary-color);
+  border-radius: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-section .logo a img {
+  height: 5rem;
+}
+
+.header-section nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.header-section nav ul li a {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.header-section nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.header-section nav ul li a:hover::after {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+.header-section .header-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.header-section .header-btns .mode-btn {
+  border: none;
+  background: none;
+}
+
+.header-section .header-btns .mode-btn i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.header-section .header-btns .menu-bar {
+  display: none;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: 12.5rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* ========= HEADER SECTION END ========== */
+
+.section {
+  margin-top: 6rem;
+}
+
+/* ========= HERO SECTION START ========== */
+
+.hero-section {
+  width: 100%;
+  height: auto;
+  color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+/* left side */
+
+.left-side {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+
+.left-side .cost-card {
+  width: 100%;
+  height: auto;
+  padding: 3rem 5rem;
+  background-color: var(--secondary-color);
+  border-radius: 3rem;
+}
+
+.left-side .cost-card #cost-text1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.left-side .cost-card h3 {
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+.left-side .cost-card #cost-text2 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.left-side .info-card {
+  width: 100%;
+  height: auto;
+  padding: 3rem 5rem;
+  background-color: var(--secondary-color);
+  border-radius: 3rem;
+}
+
+.left-side .info-card p {
+  font-size: 2rem;
+}
+
+.left-side .info-card h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.left-side .info-card a {
+  border-radius: 1.5rem;
+  padding: 1.5rem 3rem;
+}
+
+/* right side */
+
+.about-card {
+  width: 100%;
+  height: auto;
+  padding: 3rem 5rem;
+  background-color: var(--secondary-color);
+  border-radius: 3rem;
+}
+
+.about-card h1 {
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+.about-card img {
+  width: 95rem;
+  height: 45rem;
+  margin-top: 4rem;
+}
+
+/* ========= HERO SECTION END ========== */
+
+/* ========= ABOUT SECTION START ========== */
+
+/* ========= ABOUT SECTION END ========== */
+
+/* ========= MEDIA ========= */
+
+@media (max-width: 1480px) {
+  .about-card img {
+    width: 75rem;
+    height: 45rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .about-card img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .header-section nav,
+  .header-section .header-btns .btn {
+    display: none;
+  }
+
+  .header-section .header-btns .menu-bar {
+    display: block;
+    border: none;
+    background: none;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+  }
+}
