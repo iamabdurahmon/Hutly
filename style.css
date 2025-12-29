@@ -284,3 +284,57 @@ body {
     font-size: 2.5rem;
   }
 }
+
+@media (max-width: 740px) {
+  .left-side {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side .cost-card #cost-text1,
+  .left-side .cost-card #cost-text2,
+  .left-side .info-card p {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  .left-side .cost-card h3,
+  .about-card h1 {
+    font-size: 6.5rem;
+  }
+
+  .left-side .info-card h3 {
+    font-size: 2.8rem;
+  }
+
+  .about-card img {
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    padding: 0 2.5rem;
+  }
+
+  .left-side .cost-card h3,
+  .about-card h1 {
+    font-size: 4.5rem;
+  }
+
+  .left-side .cost-card #cost-text1,
+  .left-side .cost-card #cost-text2,
+  .left-side .info-card p {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .about-card img {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .about-card h1 {
+    font-size: 3rem;
+  }
+}
