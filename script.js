@@ -17,3 +17,39 @@ btn.addEventListener("click", function () {
     icon.classList.replace("ri-sun-line", "ri-moon-clear-line");
   }
 });
+
+// nav
+const menuBtn = document.querySelector(".menu-bar");
+const navbar = document.querySelector(".navbar");
+
+// navbar
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navbar.classList.toggle("active");
+  
+  const menuIcon = menuBtn.querySelector("i");
+  if (menuBtn.classList.contains("active")) {
+    menuIcon.classList.replace("ri-menu-line", "ri-close-line");
+  } else {
+    menuIcon.classList.replace("ri-close-line", "ri-menu-line");
+  }
+});
+
+function closeNavbar() {
+  menuBtn.classList.remove("active");
+  navbar.classList.remove("active");
+  const menuIcon = menuBtn.querySelector("i");
+  menuIcon.classList.replace("ri-close-line", "ri-menu-line");
+}
+
+navbar.addEventListener("click", (e) => {
+  if (e.target.localName == "a") {
+    closeNavbar();
+  }
+});
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeNavbar();
+  }
+});
