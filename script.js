@@ -22,7 +22,6 @@ btn.addEventListener("click", function () {
 const menuBtn = document.querySelector(".menu-bar");
 const navbar = document.querySelector(".navbar");
 
-// navbar
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   navbar.classList.toggle("active");
