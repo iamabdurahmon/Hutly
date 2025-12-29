@@ -317,6 +317,20 @@ body {
     padding: 0 2.5rem;
   }
 
+  .header-section {
+    padding: 1rem 3rem;
+  }
+
+  .header-section .header-btns a i{
+    font-size: 1.8rem;
+  }
+
+  .left-side .cost-card,
+  .left-side .info-card,
+  .about-card {
+    padding: 3rem 3rem;
+  }
+
   .left-side .cost-card h3,
   .about-card h1 {
     font-size: 4.5rem;
